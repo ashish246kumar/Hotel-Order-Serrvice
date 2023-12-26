@@ -1,0 +1,31 @@
+# server:
+#   port: 8084
+
+# spring:
+#   application:
+#     name: API-GATEWAY
+
+#   cloud:
+#     gateway:
+#       routes:
+#         - id: ORDER-SERVICE
+#           uri: lb://ORDER-SERVICE
+#           predicates:
+#             - Path=/order/**
+          
+
+#         - id: PAYMENT-SERVICE
+#           uri: lb://PAYMENT-SERVICE
+#           predicates:
+#             - Path=/payment/**
+         
+
+# eureka:
+#   instance:
+#     prefer-ip-address: true
+#   client:
+#     fetch-registry: true
+#     register-with-eureka: true
+#     service-url:
+#       defaultZone: http://localhost:8761/eureka
+
